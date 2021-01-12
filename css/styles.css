@@ -1,0 +1,166 @@
+body{
+  margin:0;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  color: #333;
+}
+
+header h1,
+header p{
+  margin : 0;
+}
+header{
+  background: orange;
+  color: #fff;
+  text-align: center;
+  padding: 32px;
+}
+
+header img{
+  width: 280px;
+  vertical-align: bottom;
+}
+
+.btn{
+  text-decoration: none;
+  background: #fff;
+  color: orange;
+  display: block;
+  width: 140px;
+  line-height: 44px;
+  margin: 40px auto 48px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover{
+  /* 透明度 */
+  opacity: 0.8; 
+}
+
+/* .fukusuke img{
+  width: 100%;
+} */
+
+.fukusuke > h1 {
+  text-align: center;
+  padding: 64px 0;
+  font-weight: normal;
+}
+
+.fukusuke .container{
+  margin: 0 32px;
+}
+
+.fukusuke p {
+  line-height: 24px;
+}
+
+.fukusuke section{
+  padding-bottom: 64px;
+}
+.members{
+  background: #f2f2f3;
+  /* padding-bottom: 50px; */
+}
+.members > h1{
+  text-align: center;
+  padding: 64px 0;
+  font-weight: normal;
+}
+.members li{
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 64px;
+}
+.members ul{
+  margin: 0;
+  padding: 0;
+}
+.members img{
+  width: 180px;
+  height: 200px;
+  border-radius: 50%;
+}
+.members h2{
+  font-size: 20px;
+}
+.ryo{
+  object-position: 100% 0;
+  object-fit: cover;
+}
+.kuzu{
+  object-position: 100% 5%;
+  object-fit: cover;
+}
+.meta{
+  object-position: 0 30%;
+  object-fit: cover;
+}
+
+.call-to-action{
+  background: orange;
+  color: #fff;
+  text-align: center;
+  padding: 64px 0;
+}
+.call-to-action h1{
+  font-weight: normal;
+  /* font-size: 20px; */
+}
+.call-to-action .btn{
+  margin: 0 auto;
+}
+
+footer{
+  padding: 64px 0;
+  background: #333;
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.801);
+  text-align: center;
+  
+}
+
+@media (min-width: 900px){
+  header .container{
+    display: flex;
+    width: 800px;
+    margin: auto;
+  }
+  header .info{
+    width: 60%;
+    align-self: center;
+  }
+  header .side{
+    width: 40%;
+    align-self: center;
+  }
+  .fukusuke .container{
+    width: 800px;
+    margin: 0 auto;
+  }
+  .fukusuke section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fukusuke section:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  .fukusuke .soroimg{
+    width: 50%;
+  }
+  .fukusuke .sorodoc{
+    width: calc(50% - 32px);
+    align-self: center;
+  }
+  .members ul{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .members li{
+    width: 250px;
+  }
+}
